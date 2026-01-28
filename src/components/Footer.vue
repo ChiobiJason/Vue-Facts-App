@@ -1,10 +1,13 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const href = ref("https://vuejs.org/");
+</script>
 
 <template>
   <footer>
     <p>
       Learn more about me at
-      <a target="_blank" href="https://vuejs.org/">vuejs.org</a>
+      <a target="_blank" :href>vuejs.org</a>
     </p>
   </footer>
 </template>
