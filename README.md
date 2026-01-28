@@ -1,38 +1,56 @@
-# vue-facts-app
+# Vue Facts App
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple, responsive Vue 3 + Vite app that displays fun facts about Vue.js in a card-style layout. It uses a header, main content area, and footer components styled with a custom global stylesheet.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Framework**: Vue 3 (Composition API with `<script setup>`)
+- **Bundler/Dev Server**: Vite
+- **Language**: JavaScript
+- **Styling**: Global CSS (`src/assets/main.css`)
 
-## Recommended Browser Setup
+## Getting Started
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+### Prerequisites
 
-## Customize configuration
+- **Node.js** (LTS recommended)
+- **npm** (comes with Node)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+### Install dependencies
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run the development server
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+By default, Vite will print a local URL (e.g. `http://localhost:5173`) in the terminal. Open it in your browser to view the app.
+
+### Build for production
 
 ```sh
 npm run build
 ```
+
+### Preview the production build (optional)
+
+```sh
+npm run preview
+```
+
+## Project Structure (high level)
+
+- **`src/App.vue`**: Root component that composes the header, main content, and footer.
+- **`src/main.js`**: App entry file; creates the Vue app and imports the global stylesheet.
+- **`src/components/Header.vue`**: Top section with the app title/branding.
+- **`src/components/Main.vue`**: Main content area for Vue facts.
+- **`src/components/Footer.vue`**: Footer section for credits or links.
+- **`src/assets/main.css`**: Global styles including layout and color scheme.
+
+## Notes
+
+- This project started from the standard Vue 3 + Vite template and has been customized into a Vue facts app with its own components and styling.
